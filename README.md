@@ -45,3 +45,5 @@ sudo ./izing
 ```
 
 ===================================================
+
+Para quem gostaria de uma consultoria ou que eu faça instalação pode chamar no whatsapp 48 999416725 (será cobrado por isso)
