@@ -18,16 +18,30 @@ https://dnschecker.org/
 
 para evitar erros recomendados atualizar sistema e apos atualizar reniciar para evitar erros
 
- apt -y update && apt -y upgrade
- reboot
+```bash
+apt -y update && apt -y upgrade
+```
+```bash
+reboot
+```
+
  
 Depois reniciar seguir com a instalacao
 
+```bash
 cd /root
+```
+```bash
 git clone https://github.com/cleitonme/izing.instalador.git izinginstalador
-
+```
+```bash
 sudo chmod +x ./izinginstalador/izing
+```
+```bash
 cd ./izinginstalador
+```
+```bash
 sudo ./izing
+```
 
 ===================================================
