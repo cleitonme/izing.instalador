@@ -45,7 +45,7 @@ sudo ./izing
 ```
 ## Recomendação de VPS boa e barata
 
--  [Peramix](https://control.peramix.com/?affid=58)
+-  [Powerful cloud VPS & Web hosting.](https://control.peramix.com/?affid=58)
 
 ## Consultoria particular
 
