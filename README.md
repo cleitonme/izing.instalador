@@ -43,7 +43,10 @@ cd ./izinginstalador
 ```bash
 sudo ./izing
 ```
+## Recomendação de VPS boa e barata
 
-===================================================
+-  [Peramix](https://control.peramix.com/?affid=58)
+
+## Consultoria particular
 
 Para quem gostaria de uma consultoria ou que eu faça instalação pode chamar no whatsapp 48 999416725 (será cobrado por isso)
