@@ -34,6 +34,10 @@ cd /root
 ```bash
 git clone https://github.com/cleitonme/izing.instalador.git izinginstalador
 ```
+Editar dados com seus dados
+```bash
+nano ./izinginstalador/config
+```
 ```bash
 sudo chmod +x ./izinginstalador/izing
 ```
