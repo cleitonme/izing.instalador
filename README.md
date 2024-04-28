@@ -34,7 +34,7 @@ cd /root
 ```bash
 git clone https://github.com/cleitonme/izing.instalador.git izinginstalador
 ```
-Editar dados com seus dados
+Editar dados com seus dados, com nano para salvar aperta Ctrl + x
 ```bash
 nano ./izinginstalador/config
 ```
