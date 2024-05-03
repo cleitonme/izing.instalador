@@ -230,7 +230,7 @@ whatsappweb_update() {
   cd /home/deploy/${nome_instancia}/backend
   pm2 stop all
   npm r whatsapp-web.js
-  npm install github:pedroslopez/whatsapp-web.js#webpack-exodus
+  npm i whatsapp-web.js@^1.23.1-alpha.6
   pm2 restart all
 EOF
 
