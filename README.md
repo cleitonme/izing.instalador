@@ -47,6 +47,11 @@ cd ./izinginstalador
 ```bash
 sudo ./izing
 ```
+
+## Problemas conexão whatsapp? ##
+
+Tente atualizar o Conector WWebJS whatsapp.js
+
 ## Recomendação de VPS boa e barata
 
 -  [Powerful cloud VPS & Web hosting.](https://control.peramix.com/?affid=58)
