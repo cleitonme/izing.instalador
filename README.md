@@ -9,6 +9,8 @@ Se quiser instalar 2 instancia mudar nome da instancia, porta backend, porta fro
 
 A opção atualizar vai pegar ultima versao do repositorio usado para instalar
 
+Nunca usar portas 80 e 443 para backend utilize porta 3000 a 3100 e frontend 4000 a 4100
+
 
 ## CHECAR PROPAGAÇÃO DO DOMÍNIO
 
