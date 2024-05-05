@@ -76,6 +76,8 @@ system_update() {
   sudo su - root <<EOF
   apt -y update && apt -y upgrade
   apt autoremove -y
+  sudo ufw allow 443/tcp
+  sudo ufw allow 80/tcp
 EOF
 
   sleep 2
