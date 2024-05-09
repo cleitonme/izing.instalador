@@ -54,6 +54,10 @@ sudo ./izing
 
 Tente atualizar o Conector WWebJS whatsapp.js
 
+## Instalando
+Seguem links sugerimos:
+-  [Como usar autoinstalador do IZING - Video](https://youtu.be/bZ-jXRtcGyc?si=B8oQxv0V0V36fgrF)
+
 ## Recomendação de VPS boa e barata
 
 -  [Powerful cloud VPS & Web hosting.](https://control.peramix.com/?affid=58)
