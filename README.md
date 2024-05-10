@@ -54,9 +54,15 @@ sudo ./izing
 
 Tente atualizar o Conector WWebJS whatsapp.js
 
+
 ## Recomendação de instalar e deixar Firewall ativado
 
 Seu servidor pode sofrer ataques externos que fazem sistema travar e ter quedas por favor instale e mantenha o firewall ativado.
+
+## Instalando
+Seguem links sugerimos:
+-  [Como usar autoinstalador do IZING - Video](https://youtu.be/bZ-jXRtcGyc?si=B8oQxv0V0V36fgrF)
+
 
 ## Recomendação de VPS boa e barata
 
