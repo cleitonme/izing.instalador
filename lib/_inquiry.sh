@@ -37,7 +37,17 @@ izing_atualizar() {
   frontend_node_build
 }
 
+instalar_firewall() {
+  instalacao_firewall
+}
 
+ativar_firewall () {
+  iniciar_firewall
+}
+
+desativar_firewall () {
+  parar_firewall
+}
 
 inquiry_options() {
   
@@ -48,6 +58,9 @@ inquiry_options() {
   printf "   [2] Atualizar Conector WWebJS whatsapp.js\n"
   printf "   [3] Instalar 2 instancia\n"
   printf "   [4] Atualizar Izing\n"
+  printf "   [5] Instalar Firewall(ufw) importante para evitar ataques HACKER\n"
+  printf "   [6] Ativar Firewall\n"
+  printf "   [7] Desativar Firewall\n"
   printf "\n"
   read -p "> " option
 
@@ -64,6 +77,21 @@ inquiry_options() {
       ;;
 	  
 	4) izing_atualizar
+      exit
+      ;;
+	  
+    5) 
+      instalar_firewall 
+      exit
+      ;;
+	  
+    6) 
+      ativar_firewall 
+      exit
+      ;;
+	  
+    7) 
+      desativar_firewall 
       exit
       ;;
 
