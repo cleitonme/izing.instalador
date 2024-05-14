@@ -62,10 +62,43 @@ Tente atualizar o Conector WWebJS whatsapp.js
 ## Recomendação de instalar e deixar Firewall ativado
 
 Seu servidor pode sofrer ataques externos que fazem sistema travar e ter quedas por favor instale e mantenha o firewall ativado.
+Utilizado UFW para saber mais de pesquisada no google.
 
 ## Instalando
 Seguem links sugerimos:
 -  [Como usar autoinstalador do IZING - Video](https://youtu.be/bZ-jXRtcGyc?si=B8oQxv0V0V36fgrF)
+
+## Alterar Frontend
+
+Para mudar nome do aplicativo:
+
+/home/deploy/izing.io/frontend/quasar.conf
+
+/home/deploy/izing.io/frontend/src/index.template.html
+
+Para alterar logos e icones:
+
+pasta /home/deploy/izing.io/frontend/public
+
+Para alterar cores:
+
+/home/deploy/izing.io/frontend/src/css/app.sass
+
+/home/deploy/izing.io/frontend/src/css/quasar.variables.sass
+
+Sempre alterar usando usuario deploy você pode conectar servidor com aplicativo Bitvise SSH Client. Depois das alterações compilar novamente o Frontend
+
+```bash
+su deploy
+```
+```bash
+cd /home/deploy/izing.io/frontend/
+```
+```bash
+npx quasar build -P -m pwa
+```
+
+Testar as alterações em aba anonima
 
 
 ## Recomendação de VPS boa e barata
