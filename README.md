@@ -92,7 +92,10 @@ Sempre alterar usando usuario deploy você pode conectar servidor com aplicativo
 su deploy
 ```
 ```bash
-cd /home/deploy/izing.io/frontend/
+cd /home/deploy/pastaondetainstalado/frontend/
+```
+```bash
+export NODE_OPTIONS=--openssl-legacy-provider
 ```
 ```bash
 npx quasar build -P -m pwa
