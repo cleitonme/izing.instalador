@@ -366,7 +366,8 @@ system_nginx_conf() {
 sudo su - root << EOF
 
 cat > /etc/nginx/conf.d/izingio.conf << 'END'
-client_max_body_size 20M;
+client_max_body_size 100M;
+large_client_header_buffers 16 5120k;
 END
 
 EOF
