@@ -1,3 +1,5 @@
+[![Grupo do WhatsApp](https://img.shields.io/badge/WhatsApp-Grupo%20IZING-brightgreen.svg)](https://chat.whatsapp.com/IIReEheixAx27ZbneHpskP)
+
 ## CRIAR SUBDOMINIO E APONTAR PARA O IP DA SUA VPS
 
 Testado ubuntu 20 e 22
@@ -110,6 +112,6 @@ Testar as alterações em aba anonima
 
 ## Consultoria particular
 
-Para quem gostaria de uma consultoria ou que eu faça instalação pode chamar no whatsapp 48 999416725 (será cobrado por isso)
+Para quem gostaria de uma consultoria ou que eu faça instalação pode chamar no whatsapp (será cobrado por isso) 48 999416725 
 
 -  [Versão pro do IZING](https://github.com/cleitonme/izing.pro.install)
