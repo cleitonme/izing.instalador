@@ -458,6 +458,7 @@ system_docker_restart() {
   sudo su - root <<EOF
   docker container restart portainer
   docker container restart postgresql
+  docker exec -u root postgresql bash -c "chown -R postgres:postgres /var/lib/postgresql/data"
 EOF
 
   sleep 10
