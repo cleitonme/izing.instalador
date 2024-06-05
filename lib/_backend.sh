@@ -16,6 +16,8 @@ backend_db_create() {
 
   sudo su - root <<EOF
   usermod -aG docker deploy
+  mkdir -p /data
+  chown -R 999:999 /data
   docker run --name postgresql \
                 -e POSTGRES_USER=izing \
                 -e POSTGRES_PASSWORD=${pg_pass} \

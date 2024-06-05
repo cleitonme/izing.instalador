@@ -68,7 +68,8 @@ Utilizado UFW para saber mais de pesquisada no google.
 
 ## Instalando
 Seguem links sugerimos:
--  [Como usar autoinstalador do IZING - Video](https://youtu.be/bZ-jXRtcGyc?si=B8oQxv0V0V36fgrF)
+-  [Como usar autoinstalador do IZING - Video](https://youtu.be/-Woqu4W5Zzs?si=jcZYX3yPL60XkAd_)
+-  [Como usar autoinstalador do IZING - Video opção 2](https://youtu.be/bZ-jXRtcGyc?si=B8oQxv0V0V36fgrF)
 
 ## Alterar Frontend
 
