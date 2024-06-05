@@ -231,6 +231,7 @@ whatsappweb_update() {
   sudo su - deploy <<EOF
   cd /home/deploy/${nome_instancia}/backend
   pm2 stop all
+  rm .wwebjs_auth -Rf
   npm r whatsapp-web.js
   npm i whatsapp-web.js@^1.23.1-alpha.6
   pm2 restart all
