@@ -31,7 +31,6 @@ instalacao_firewall() {
   sleep 2
 
   sudo su - root <<EOF
-apt install -y ufw
 ufw default deny incoming
 ufw default allow outgoing
 ufw allow ssh
@@ -44,7 +43,7 @@ echo "{\"iptables\": false}" > /etc/docker/daemon.json
 systemctl restart docker
 sed -i -e 's/DEFAULT_FORWARD_POLICY="DROP"/DEFAULT_FORWARD_POLICY="ACCEPT"/g' /etc/default/ufw
 ufw reload
-wget -O /usr/local/bin/ufw-docker https://github.com/chaifeng/ufw-docker/raw/master/ufw-docker
+wget -q -O /usr/local/bin/ufw-docker https://github.com/chaifeng/ufw-docker/raw/master/ufw-docker
 chmod +x /usr/local/bin/ufw-docker
 ufw-docker install
 systemctl restart ufw
@@ -224,7 +223,7 @@ system_puppeteer_dependencies() {
   sleep 2
 
   sudo su - root <<EOF
-apt install -y apt-transport-https ffmpeg fonts-ipafont-gothic fonts-wqy-zenhei fonts-thai-tlwg fonts-kacst fonts-freefont-ttf libxss1 ca-certificates software-properties-common curl libgbm-dev wget unzip fontconfig locales gconf-service libasound2 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils python2-minimal build-essential libxshmfence-dev nginx
+apt install -y ufw apt-transport-https ffmpeg fonts-ipafont-gothic fonts-wqy-zenhei fonts-thai-tlwg fonts-kacst fonts-freefont-ttf libxss1 ca-certificates software-properties-common curl libgbm-dev wget unzip fontconfig locales gconf-service libasound2 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils python2-minimal build-essential libxshmfence-dev nginx
 EOF
 
   sleep 2
@@ -488,7 +487,7 @@ system_success() {
   printf "\n"
   printf "URL back: https://$backend_domain"
   printf "\n"
-  printf "Acesso ao Portainer: http://ip.da.vps:9000"
+  printf "Acesso ao Portainer: http://$frontend_domain:9000"
   printf "\n"
   printf "Senha Usuario Deploy: $deploy_password"
   printf "\n"

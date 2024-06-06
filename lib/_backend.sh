@@ -98,6 +98,9 @@ backend_set_env() {
   frontend_url=$(echo "${frontend_url/https:\/\/}")
   frontend_url=${frontend_url%%/*}
   frontend_url=https://$frontend_url
+  
+  jwt_secret=$(openssl rand -base64 32)
+  jwt_refresh_secret=$(openssl rand -base64 32)
 
 sudo su - deploy << EOF
   cat <<[-]EOF > /home/deploy/${nome_instancia}/backend/.env
@@ -118,8 +121,8 @@ POSTGRES_PASSWORD=${pg_pass}
 POSTGRES_DB=postgres
 
 # Chaves para criptografia do token jwt
-JWT_SECRET=DPHmNRZWZ4isLF9vXkMv1QabvpcA80Rc
-JWT_REFRESH_SECRET=EMPehEbrAdi7s8fGSeYzqGQbV5wrjH4i
+JWT_SECRET=${jwt_secret}
+JWT_REFRESH_SECRET=${jwt_refresh_secret}
 
 # Dados de conexão com o REDIS
 IO_REDIS_SERVER=localhost

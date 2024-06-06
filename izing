@@ -43,6 +43,7 @@ system_node_install
 system_pm2_install
 system_docker_install
 system_puppeteer_dependencies
+instalacao_firewall
 system_snapd_install
 system_nginx_install
 system_certbot_install
