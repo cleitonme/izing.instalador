@@ -35,16 +35,6 @@ backend_db_create() {
                 --appendonly yes \
                 --requirepass "${redis_pass}"
 
-  docker run -d --name rabbitmq \
-                -p 5672:5672 \
-                -p 15672:15672 \
-                --restart=always \
-                --hostname rabbitmq \
-                -e RABBITMQ_DEFAULT_USER=izing \
-                -e RABBITMQ_DEFAULT_PASS=${rabbit_pass} \
-                -v /data:/var/lib/rabbitmq \
-                rabbitmq:3-management-alpine
-  
   docker run -d --name portainer \
                 -p 9000:9000 -p 9443:9443 \
                 --restart=always \
@@ -146,9 +136,9 @@ MIN_SLEEP_INTERVAL=2000
 MAX_SLEEP_INTERVAL=5000
 
 # dados do RabbitMQ / Para não utilizar, basta comentar a var AMQP_URL
-RABBITMQ_DEFAULT_USER=izing
-RABBITMQ_DEFAULT_PASS=${rabbit_pass}
-AMQP_URL='amqp://izing:${rabbit_pass}@localhost:5672?connection_attempts=5&retry_delay=5'
+RABBITMQ_DEFAULT_USER=admin
+RABBITMQ_DEFAULT_PASS=123456
+# AMQP_URL='amqp://admin:123456@host.docker.internal:5672?connection_attempts=5&retry_delay=5'
 
 # api oficial (integração em desenvolvimento)
 API_URL_360=https://waba-sandbox.360dialog.io
