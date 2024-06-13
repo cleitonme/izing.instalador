@@ -24,7 +24,9 @@ https://dnschecker.org/
 
 ## RODAR OS COMANDOS ABAIXO ##
 
-para evitar erros recomendados atualizar sistema e apos atualizar reniciar para evitar erros
+Antes de iniciar verifique no site acima se propagou o dns. Para não ter erro na instalaçao
+
+Para evitar erros recomendados atualizar sistema e apos atualizar reniciar para evitar erros
 
 ```bash
 apt -y update && apt -y upgrade

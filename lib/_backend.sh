@@ -226,7 +226,7 @@ whatsappweb_update() {
   pm2 stop all
   rm .wwebjs_auth -Rf
   npm r whatsapp-web.js
-  npm i whatsapp-web.js@^1.23.1-alpha.6
+  npm i whatsapp-web.js@^1.24.0
   pm2 restart all
 EOF
 

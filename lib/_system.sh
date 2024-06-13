@@ -398,7 +398,7 @@ system_certbot_setup() {
           --domains $backend_domain,$frontend_domain
 EOF
 
-  sleep 2
+  sleep 60
 }
 
 #######################################
