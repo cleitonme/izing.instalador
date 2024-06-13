@@ -225,6 +225,7 @@ whatsappweb_update() {
   cd /home/deploy/${nome_instancia}/backend
   pm2 stop all
   rm .wwebjs_auth -Rf
+  rm .wwebjs_cache -Rf
   npm r whatsapp-web.js
   npm i whatsapp-web.js@^1.24.0
   pm2 restart all
