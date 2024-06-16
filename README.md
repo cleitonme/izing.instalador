@@ -141,3 +141,4 @@ Depois acesse novamente url http://seuip:9000/
 Para quem gostaria de uma consultoria ou que eu faça instalação pode chamar no whatsapp (será cobrado por isso) 48 999416725 
 
 -  [Versão pro do IZING](https://github.com/cleitonme/izing.pro.install)
+-  [Versão API Bayles](https://github.com/cleitonme/izingpro.bayles.install)
