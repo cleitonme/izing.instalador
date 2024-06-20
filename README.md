@@ -13,10 +13,6 @@ A opção atualizar vai pegar ultima versao do repositorio usado para instalar
 
 Nunca usar portas 80 e 443 para backend utilize porta 3000 a 3100 e frontend 4000 a 4100
 
-## MEU REPOSITORIO TEM ALGUMAS MUDANÇAS AO ORIGINAL VERIQUE O README
-
-https://github.com/cleitonme/izing.open.io
-
 
 ## CHECAR PROPAGAÇÃO DO DOMÍNIO
 
@@ -141,4 +137,4 @@ Depois acesse novamente url http://seuip:9000/
 Para quem gostaria de uma consultoria ou que eu faça instalação pode chamar no whatsapp (será cobrado por isso) 48 999416725 
 
 -  [Versão pro do IZING](https://github.com/cleitonme/izing.pro.install)
--  [Versão API Bayles](https://github.com/cleitonme/izingpro.bayles.install)
+-  [Nova Versão com API Bayles](https://github.com/cleitonme/izingpro.bayles.install)
