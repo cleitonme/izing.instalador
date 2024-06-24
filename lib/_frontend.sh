@@ -16,7 +16,7 @@ frontend_node_dependencies() {
 
   sudo su - deploy <<EOF
   cd /home/deploy/${nome_instancia}/frontend
-  npm install --force --silent
+  npm install --force
   npm i @quasar/cli
 EOF
 
