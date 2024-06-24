@@ -183,7 +183,7 @@ backend_node_dependencies() {
 
   sudo su - deploy <<EOF
   cd /home/deploy/${nome_instancia}/backend
-  npm install --force --silent
+  npm install --force
 EOF
 
   sleep 2
