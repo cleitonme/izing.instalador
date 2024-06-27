@@ -475,9 +475,6 @@ system_success() {
   printf "${GREEN} 💻 Instalação concluída com Sucesso...${NC}"
   printf "${CYAN_LIGHT}";
   printf "\n\n"
-  printf "Usuário painel SaaS: super@izing.io"
-  printf "\n"
-  printf "Senha: 123456"
   printf "\n"
   printf "Usuário: admin@izing.io"
   printf "\n"
