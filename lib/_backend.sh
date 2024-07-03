@@ -263,7 +263,8 @@ git_update() {
   sudo su - deploy <<EOF
   cd /home/deploy/${nome_instancia}
   pm2 stop all
-  git checkout master
+  git stash clear
+  git stash
   git pull
 EOF
 

@@ -31,7 +31,6 @@ izing_atualizar() {
   backend_node_dependencies
   backend_node_build
   backend_db_migrate
-  backend_db_seed
   restart_pm2
   frontend_node_dependencies
   frontend_node_build
