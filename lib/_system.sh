@@ -82,6 +82,23 @@ EOF
   sleep 2
 }
 
+erro_banco() {
+  print_banner
+  printf "${WHITE} 💻 Estamos corrigindo...${GRAY_LIGHT}"
+  printf "\n\n"
+
+  sleep 2
+
+  sudo su - root <<EOF
+  docker container restart postgresql
+  docker exec -u root postgresql bash -c "chown -R postgres:postgres /var/lib/postgresql/data"
+  docker container restart postgresql
+  
+EOF
+
+  sleep 2
+}
+
 #######################################
 # set timezone
 # Arguments:

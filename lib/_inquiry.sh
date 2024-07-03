@@ -45,6 +45,10 @@ desativar_firewall () {
   parar_firewall
 }
 
+Erro_global () {
+  erro_banco
+}
+
 inquiry_options() {
   
   print_banner
@@ -56,6 +60,7 @@ inquiry_options() {
   printf "   [4] Atualizar Izing\n"
   printf "   [5] Ativar Firewall\n"
   printf "   [6] Desativar Firewall\n"
+  printf "   [7] Erro global/pg_filenode.map\n"
   printf "\n"
   read -p "> " option
 
@@ -82,6 +87,11 @@ inquiry_options() {
 	  
     6) 
       desativar_firewall 
+      exit
+      ;;
+	  
+    7) 
+      Erro_global 
       exit
       ;;
 
