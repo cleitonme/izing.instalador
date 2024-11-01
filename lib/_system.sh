@@ -109,14 +109,18 @@ system_set_timezone() {
   printf "${WHITE} 💻 Setando timezone...${GRAY_LIGHT}"
   printf "\n\n"
 
+  # Define o timezone padrão como America/Sao_Paulo, se não for passado um valor
+  TIMEZONE=${TIMEZONE:-America/Sao_Paulo}
+
   sleep 2
 
   sudo su - root <<EOF
-  timedatectl set-timezone America/Sao_Paulo
+  timedatectl set-timezone $TIMEZONE
 EOF
 
   sleep 2
 }
+
 
 #######################################
 # unzip izing
