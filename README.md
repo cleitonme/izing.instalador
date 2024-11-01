@@ -41,9 +41,12 @@ cd /root
 git clone https://github.com/cleitonme/izing.instalador.git izinginstalador
 ```
 Editar dados com seus dados, com nano para salvar aperta Ctrl + x
+
+Você pode definir o timezone desejado usando a variável de ambiente TIMEZONE. Caso não seja informado, o sistema usará o timezone padrão: America/Sao_Paulo.
 ```bash
 nano ./izinginstalador/config
 ```
+
 ```bash
 sudo chmod +x ./izinginstalador/izing
 ```
