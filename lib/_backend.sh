@@ -227,7 +227,7 @@ whatsappweb_update() {
   rm .wwebjs_auth -Rf
   rm .wwebjs_cache -Rf
   npm r whatsapp-web.js
-  npm install github:pedroslopez/whatsapp-web.js#webpack-exodus
+  npm install github:pedroslopez/whatsapp-web.js
   pm2 restart all
 EOF
 
