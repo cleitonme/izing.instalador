@@ -226,6 +226,7 @@ whatsappweb_update() {
   pm2 stop all
   rm .wwebjs_auth -Rf
   rm .wwebjs_cache -Rf
+  rm package-lock.json
   npm r whatsapp-web.js
   npm install github:pedroslopez/whatsapp-web.js
   pm2 restart all
